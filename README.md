@@ -24,6 +24,7 @@ First, we check all the columns and drop the one we do not need. We are ultimate
 ## Assessment of Missingness
 ### NMAR Analysis
 
+
 ### Missingness Dependency
 
 #### 1. CUSTOMERS.AFFECTED and POSTAL.CODE (MCAR)
