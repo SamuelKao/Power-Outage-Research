@@ -35,6 +35,7 @@ We're analyzing missing values in the 'CUSTOMERS.AFFECTED' column of the dataset
 Then, we're calculating Total Variation Distance (TVD) for these proportions. This helps measure the difference in distribution between missing and non-missing values across postal codes.
 
 Below is the graph of our result of permutation test, our p-value is greater than our significance level of 5%, so we fail to reject the null hypothesis. The significance of this is that it is highly possible that the missingness of Customer Affected does not depend on Postal Code.
+<iframe src="assets\Dist_Perm_Diff.html" width=800 height=600 frameBorder=0></iframe>
 
 #### 2. CUSTOMERS.AFFECTED and OUTAGE_DURATION (MAR)
 Null Hypothesis: The missingness of CUSTOMERS.AFFECTED does not depend on OUTAGE_DURATION
