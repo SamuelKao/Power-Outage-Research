@@ -1,4 +1,4 @@
-# Power-Outage-Research
+# Power Outage Research
 ## Introduction
 
 My partner and I are planning to conduct analysis on the outages dataset. It seems the most relevant and has real world applications; thus, we believe the power outages dataset to be the most appealing.
@@ -35,7 +35,7 @@ Then, we're calculating Total Variation Distance (TVD) for these proportions. Th
 
 Below is the graph of our result of permutation test, our p-value is greater than our significance level of 5%, so we fail to reject the null hypothesis. The significance of this is that it is highly possible that the missingness of Customer Affected does not depend on Postal Code.
 
-##### 2. CUSTOMERS.AFFECTED and OUTAGE_DURATION (MAR)
+#### 2. CUSTOMERS.AFFECTED and OUTAGE_DURATION (MAR)
 Null Hypothesis: The missingness of CUSTOMERS.AFFECTED does not depend on OUTAGE_DURATION
 
 Alternative Hypothesis: The missingness of CUSTOMERS.AFFECTED depend on OUTAGE_DURATION
