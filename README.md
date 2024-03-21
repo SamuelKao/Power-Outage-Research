@@ -83,6 +83,14 @@ Under the null hypothesis, we can regularly see a difference like 0.01786. There
 
 Notebook: We want to predict the duration of a power outages based on the following features: “RES.PRICE”, “IND.PRICE”, “CLIMATE.REGION”, “CLIMATE.CATEGORY”, “COM.PRICE”.
 
+|RES.PRICE	|CLIMATE.REGION	|COM.PRICE|	OUTAGE_DURATION	|PI.UTIL.OFUSA |CUSTOMERS.AFFECTED|
+|---------------:|:------------|:--------------------|-------:|
+|11.6	|East North Central|	9.18|	3060.0|	2.2|	70000.0|
+|12.12	|East North Central|    9.71|	1.0|2.2	|0.0|
+|10.87	|East North Central|	8.19|	3000.0|	2.1|70000.0|
+|11.79	|East North Central|	9.25|	2550.0|	2.2| 68200.0|
+|13.07	|East North Central|	10.16|	1740.0|	2.2|	250000.0|
+
 These are the features that we are going to be using because these are the only features that we can be sure of before the power outage itself. Other factors like “CUSTOMERS.AFFECTED” wouldnt be known to us before the start of the power outage. Thus, these features are going to be the ones we’re training our Regression model on. 
 
 To recap, our response variable is going to be “CUSTOMERS.AFFECTED” and our features that we are going to be using are “RES.PRICE”, “IND.PRICE”, “CLIMATE.REGION”, “CLIMATE.CATEGORY”, “COM.PRICE”, . The metric that we are going to be using to determine the accuracy of our model is the RMSE as well as the R^2. 
