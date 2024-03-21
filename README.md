@@ -1,7 +1,7 @@
 # Power Outage Research
 ## Introduction
 
-My partner and I are planning to conduct analysis on the outages dataset. It seems the most relevant and has real world applications; thus, we believe the power outages dataset to be the most appealing.
+We are planning to conduct analysis on the outages dataset. It seems the most relevant and has real world applications; thus, we believe the power outages dataset to be the most appealing.
 
 There are various questions that we can explore when it comes to this dataset. Here are a few of them.
 
@@ -20,6 +20,7 @@ First, we check all the columns and drop the one we do not need. We are ultimate
 
 
 ### Bivariate Analyses
+<iframe src="assets\scatter.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Assessment of Missingness
 ### NMAR Analysis
