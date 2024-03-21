@@ -10,3 +10,12 @@ There are various questions that we can explore when it comes to this dataset. H
 - Do different regions/states have different distributions in the number of power outages that they experience?
 
 - Has there been an increase in the number of power outages across the United States due to the increase of rapid urbanization?
+
+## Data Cleaning and Exploratory Data Analysis
+First, we check all the columns and drop the one we do not need. We are ultimately trying to predict which variables are going to be the most effective at determining how many customers are affected by outage. 
+
+#### Univariate Analyses 
+
+
+
+#### Bivariate Analyses
