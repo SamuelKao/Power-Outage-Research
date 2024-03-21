@@ -56,6 +56,8 @@ Alternative Hypothesis: The mean duration of power outages in areas with a RES.P
 
 Let's visualize the distribution of anomaly.levels in places with a res.price <= 11.5 and places with a res.price > 11.5
 
+<iframe src="assets\Anomaly.html" width=800 height=600 frameBorder=0></iframe>
+
 From this distribution above, its difficulat to tell whether or not there is a difference between the two groups.
 
 ### Test Statistic Calculations
