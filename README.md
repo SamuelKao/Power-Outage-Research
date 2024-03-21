@@ -20,7 +20,7 @@ First, we check all the columns and drop the one we do not need. We are ultimate
 
 
 ### Bivariate Analyses
-<iframe src="assets\scatter.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets\scatter_plot.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Assessment of Missingness
 ### NMAR Analysis
