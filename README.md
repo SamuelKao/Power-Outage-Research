@@ -15,7 +15,7 @@ There are various questions that we can explore when it comes to this dataset. H
 First, we check all the columns and drop the one we do not need. We are ultimately trying to predict which variables are going to be the most effective at determining how many customers are affected by outage. 
 
 ### Univariate Analyses 
-<iframe src="assets\fig1.html" width=800 height=600frameBorder=0></iframe>
+<iframe src="assets\fig1.html" width=800 height=600 frameBorder=0></iframe>
 
 
 
