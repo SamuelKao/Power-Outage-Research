@@ -79,7 +79,7 @@ Null Hypothesis: The missingness of CUSTOMERS.AFFECTED does not depend on OUTAGE
 
 Alternative Hypothesis: The missingness of CUSTOMERS.AFFECTED depend on OUTAGE_DURATION
 
-Then, we're calculating Absolute Difference in mean for these proportions. This helps measure the difference in distribution between missing and non-missing values across Outage Duration.
+Then, we're using  for these proportions. This helps measure the difference in distribution between missing and non-missing values across Outage Duration.
 
 Below is the graph and the output of permutation test. Our p-value is less than our significance level of 5%, so we reject the null hypothesis. The significance of this is that it is highly possible that the missingness of Customer Affected depends on outage duration.
 
@@ -134,6 +134,11 @@ Notebook: We want to predict the duration of a power outages based on the follow
 These are the features that we are going to be using because these are the only features that we can be sure of before the power outage itself. Other factors like “CUSTOMERS.AFFECTED” wouldnt be known to us before the start of the power outage. Thus, these features are going to be the ones we’re training our Regression model on. 
 
 To recap, our response variable is going to be “CUSTOMERS.AFFECTED” and our features that we are going to be using are “RES.PRICE”, “IND.PRICE”, “CLIMATE.REGION”, “CLIMATE.CATEGORY”, “COM.PRICE”, . The metric that we are going to be using to determine the accuracy of our model is the RMSE as well as the R^2. 
+
+## Baseline Model
+
+
+## Final Model
 
 ## Fairness Analysis
 Because we used a regression model we are going to be comparing the r^2 value that we got in our baseline model to the r^2 value that we got in the Final Model.
