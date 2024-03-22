@@ -79,9 +79,8 @@ Null Hypothesis: The missingness of CUSTOMERS.AFFECTED does not depend on OUTAGE
 
 Alternative Hypothesis: The missingness of CUSTOMERS.AFFECTED depend on OUTAGE_DURATION
 
-Then, we're using  for these proportions. This helps measure the difference in distribution between missing and non-missing values across Outage Duration.
-
-Below is the graph and the output of permutation test. Our p-value is less than our significance level of 5%, so we reject the null hypothesis. The significance of this is that it is highly possible that the missingness of Customer Affected depends on outage duration.
+The statistical analysis reveals a significant relationship between 'CUSTOMERS.AFFECTED' missingness and 'OUTAGE_DURATION'. The Kolmogorov-Smirnov test statistic, calculated from permutation tests, supports this conclusion, with a p-value below the 5% significance level.
+Consequently, we reject the null hypothesis, suggesting that the missingness of customer data is influenced by outage duration. This underscores the necessity of accounting for outage duration when handling missing data, implying potential systematic patterns in reporting practices or outage severity.
 
 <iframe src="assets\permuted_ks_stats_distribution_with_p_value.html" width=800 height=600 frameBorder=0></iframe>
 
