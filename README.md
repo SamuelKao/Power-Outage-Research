@@ -107,7 +107,12 @@ Our observed difference in grouped means is 0.01786
 
 Now that we've calculated our observed statistic. Let' begin our comparison of these two samples by doing a permutation test. In order to do this test, we are goingt o be randomly shuffling around the values of ANOMALY.LEVEL. We are not shuffling around the RES.PRICE groups so that we can still groupby the "RES.PRICE" later on in our loop.
 
-<iframe src="assets\Mean_Anomaly.html" width=800 height=600 frameBorder=0></iframe>
+|         | ANOMALY.LEVEL | Shuffled_anomaly |
+|---------|---------------|------------------|
+|         |               |                  |
+| RES.PRICE <= 11.5 |               |                  |
+| False   | -0.105744     | -0.081088        |
+| True    | -0.087879     | -0.113015        |
 
 
 Once again, the question that we are trying to answer is that how likely is it that one random shuffle gives us a difference in grouped means (RES.PRICE <= 11.5 & RES.PRICE > 11.5) of 0.01786?
