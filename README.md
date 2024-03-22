@@ -62,6 +62,7 @@ The missingness in the 'CUSTOMERS.AFFECTED' variable may signify certain biases 
 
 The absence of data in the 'CLIMATE.REGION' variable may indicate a reporting bias linked to regional climate conditions. Regions with milder climates might have fewer reported outages compared to those prone to extreme weather events. This suggests a potential non-random missingness scenario, highlighting variability in outage reporting based on climate regions. Further investigation, possibly through the inclusion of historical weather data or geographical features, is necessary to transition towards a missing at random (MAR) scenario and mitigate biases in outage reporting across diverse climate regions.### Missingness Dependency
 
+### Missingness Dependency
 #### 1. CUSTOMERS.AFFECTED and POSTAL.CODE (MCAR)
 Null Hypothesis: The missingness of Customers Affected does not depend on Postal Code
 
