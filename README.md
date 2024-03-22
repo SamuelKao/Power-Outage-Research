@@ -33,7 +33,7 @@ We create a scatter plot to visualize the relationship between 'OUTAGE_DURATION'
 ### Interesting Aggregates
 The graph displays the number of outages per year, with each point representing a specific year. The horizontal axis represents the years, while the vertical axis indicates the count of outages. The plot allows for the visualization of trends or patterns in outage frequency over time, helping to identify any fluctuations or significant changes in outage occurrences across different years.
 |   YEAR  |  MONTH  |
-|---------|---------|
+|--------:|:------------|
 |  2000   |    19   |
 |  2001   |    15   |
 |  2002   |    16   |
