@@ -55,6 +55,7 @@ The graph displays the number of outages per year, with each point representing 
 
 
 <iframe src="assets\scatter_plot.html" width=800 height=600 frameBorder=0></iframe>
+
 ## Assessment of Missingness
 ### NMAR Analysis
 
