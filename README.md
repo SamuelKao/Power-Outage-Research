@@ -15,13 +15,45 @@ There are various questions that we can explore when it comes to this dataset. H
 First, we check all the columns and drop the one we do not need. We are ultimately trying to predict which variables are going to be the most effective at determining how many customers are affected by outage. 
 
 ### Univariate Analyses 
+The right-skewed shape of the outage duration histogram indicates that there are fewer occurrences of longer outage durations compared to shorter ones. This suggests that the majority of outages tend to be shorter in duration, with only a small proportion of outages lasting for an extended period.
 <iframe src="assets\fig1.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets\Distribution-Customers_Affected.html" width=800 height=600 frameBorder=0></iframe>
 
 
 
 ### Bivariate Analyses
-<iframe src="assets\scatter_plot.html" width=800 height=600 frameBorder=0></iframe>
+Let's create a box plot to compare the distribution of outage durations ('OUTAGE_DURATION') across different climate regions ('CLIMATE.REGION'). This will help us identify if there are any differences in outage durations based on climate regions.
+<iframe src="assets\boxplot.html" width=800 height=600 frameBorder=0></iframe>
 
+We create a scatter plot to visualize the relationship between 'OUTAGE_DURATION' and 'CUSTOMERS.AFFECTED'. This will help us understand if there's any correlation between the duration of outages and the number of customers affected.
+<iframe src="assets\Outage_customers.html" width=800 height=600 frameBorder=0></iframe>
+
+
+### Interesting Aggregates
+The graph displays the number of outages per year, with each point representing a specific year. The horizontal axis represents the years, while the vertical axis indicates the count of outages. The plot allows for the visualization of trends or patterns in outage frequency over time, helping to identify any fluctuations or significant changes in outage occurrences across different years.
+|   YEAR  |  MONTH  |
+|---------|---------|
+|  2000   |    19   |
+|  2001   |    15   |
+|  2002   |    16   |
+|  2003   |    46   |
+|  2004   |    71   |
+|  2005   |    55   |
+|  2006   |    66   |
+|  2007   |    56   |
+|  2008   |   111   |
+|  2009   |    78   |
+|  2010   |   106   |
+|  2011   |   269   |
+|  2012   |   174   |
+|  2013   |   153   |
+|  2014   |   112   |
+|  2015   |   119   |
+|  2016   |    59   |
+
+
+<iframe src="assets\scatter_plot.html" width=800 height=600 frameBorder=0></iframe>
 ## Assessment of Missingness
 ### NMAR Analysis
 
