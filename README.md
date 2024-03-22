@@ -109,7 +109,6 @@ Now that we've calculated our observed statistic. Let' begin our comparison of t
 
 |         | ANOMALY.LEVEL | Shuffled_anomaly |
 |---------|---------------|------------------|
-|         |               |                  |
 | RES.PRICE <= 11.5 |               |                  |
 | False   | -0.105744     | -0.081088        |
 | True    | -0.087879     | -0.113015        |
