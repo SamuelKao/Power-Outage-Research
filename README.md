@@ -5,7 +5,7 @@ We are planning to conduct analysis on the outages dataset. It seems the most re
 
 There are various questions that we can explore when it comes to this dataset. Here are a few of them.
 
-- Which factors most heavily contribute to increasing the duration of a power outage?
+- Which factors most heavily contribute to increasing the numbers of customers that are affected by power outage
 
 - Do different regions/states have different distributions in the number of power outages that they experience?
 
@@ -133,3 +133,13 @@ These are the features that we are going to be using because these are the only 
 
 To recap, our response variable is going to be “CUSTOMERS.AFFECTED” and our features that we are going to be using are “RES.PRICE”, “IND.PRICE”, “CLIMATE.REGION”, “CLIMATE.CATEGORY”, “COM.PRICE”, . The metric that we are going to be using to determine the accuracy of our model is the RMSE as well as the R^2. 
 
+## Fairness Analysis
+Because we used a regression model we are going to be comparing the r^2 value that we got in our baseline model to the r^2 value that we got in the Final Model.
+
+The permutation test question that we have is: "Is the r^2 score that we got in the final model significantly greater than the r^2 score that we got from our baseline model?
+
+Null Hypothesis: The r^2 scores that we got from both models are approxiamtely the same.
+
+Alternative Hypthesis: The r^2 score that we got from our Final Model is signficantly greater than the r^2 score that we got from our Baseline Model.
+
+Because we got a p-value of 0.784, we have singificant evidence that we can reject our null. Thus, we can accept the alternative hypothesis that our r^2 score that we got from our final model is higher than the r^2 score we got from the baseline model. 
