@@ -142,6 +142,18 @@ These are the features that we are going to be using because these are the only 
 To recap, our response variable is going to be “CUSTOMERS.AFFECTED” and our features that we are going to be using are “RES.PRICE”, “IND.PRICE”, “CLIMATE.REGION”, “CLIMATE.CATEGORY”, “COM.PRICE”, . The metric that we are going to be using to determine the accuracy of our model is the RMSE as well as the R^2. 
 
 ## Baseline Model
+As stated before, we are going to be running a Multi-Linear Regression model, lets begin trianing that model.
+
+|   | RES.PRICE | CLIMATE.REGION    | COM.PRICE | OUTAGE_DURATION | PI.UTIL.OFUSA | CUSTOMERS.AFFECTED |
+|---|-----------|-------------------|-----------|-----------------|---------------|---------------------|
+| 0 | 11.6      | East North Central| 9.18      | 3060.0          | 2.2           | 70000.0             |
+| 1 | 12.12     | East North Central| 9.71      | 1.0             | 2.2           | 116000.0            |
+| 2 | 10.87     | East North Central| 8.19      | 3000.0          | 2.1           | 70000.0             |
+| 3 | 11.79     | East North Central| 9.25      | 2550.0          | 2.2           | 68200.0             |
+| 4 | 13.07     | East North Central| 10.16     | 1740.0          | 2.2           | 250000.0            |
+
+Make a subset of outages1 with all the relevant features for our linear regression model. This will also help us with the tranformation of necessary columns so that we can run the Multi Linear Regression on it. 
+
 
 
 ## Final Model
