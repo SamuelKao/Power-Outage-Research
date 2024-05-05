@@ -122,7 +122,7 @@ After permutating and shuffling the groups 500 times. We have our observed stati
 <iframe src="assets\Mean_Anomaly.html" width=800 height=600 frameBorder=0></iframe>
 
 
-Under the null hypothesis, we can regularly see a difference like 0.01786. Therefore we fail to reject the null hypothesis that these two groups come the same distribution. The difference between the two samples is not statistically significant. 
+Under the null hypothesis, we can regularly see a difference like 0.01786. Therefore we reject the null hypothesis that these two groups come the same distribution. The difference between the two samples is not statistically significant. 
 
 ## Framing a Prediction Problem
 
