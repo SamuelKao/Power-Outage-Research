@@ -5,8 +5,7 @@ We are planning to conduct analysis on the outages dataset. It seems the most re
 
 There are various questions that we can explore when it comes to this dataset. Here are a few of them.
 
-- Which factors most heavily contribute to increasing the numbers of customers that are affected by power outage
-
+- Which factors most heavily contribute to increasing the duration of power outage?
 - Do different regions/states have different distributions in the number of power outages that they experience?
 
 - Has there been an increase in the number of power outages across the United States due to the increase of rapid urbanization?
@@ -157,6 +156,25 @@ Make a subset of outages1 with all the relevant features for our linear regressi
 
 
 ## Final Model
+Going into our final model, we did a Grid Search so that we could find the optimal hyperparameters to increase the r^2 value of our model. By running "pipeline.named_steps['linear'].get_params().keys()" in our notebook, the hyperparameters that we could choose were 'copy_X', 'fit_intercept', 'n_jobs', 'normalize', 'positive'.
+
+The hyperparamters that we had our Grid Search optimize for us are "fit_intercept", "postive", and "copy_X".
+
+fit_intercept (True or False) determines whether or not our model should even calculate an intercept the final regression
+
+"positive" (True or False) if true forces the coefficients to be set to postive.
+
+"copy_X" (True or False) copies X, otherwise X can be overwritten during our regression.
+
+The optimal hyperparameters we got after doing our Grid Search were 'copy_X': True, 'fit_intercept': True, 'positive': True.
+
+With these optimal hyperparameters, we can begin fitting our new pipeline. Unlike the previous model, my partner and I decided to completely remove the "CLIMATE.CATEGORY" as there were too many categories within this column, and while removing related columns (multicolinearity) does not necessarily increase r^2, we believed that it was adding too much noise to our model.
+
+Similiarly to before, we converted 'RES.PRICE','PI.UTIL.OFUSA','OUTAGE_DURATION' and we standardized 'OUTAGE_DURATION'. However, we also applied QuantileTransformer to "OUTAGE_DURATION" beacause we wanted to see whether or not we could categorize the duration of the outage and whether or not that would help increase our r^2.
+
+After fitting our new pipeline to the training data. We got a new RMSE of 4839.103 and an r^2 of 0.215. The RMSE is  lowr than our original model and our r^2 we believe to be singificantly higher than our original r^2. We will now conduct whether or not that is the case.
+
+
 
 ## Fairness Analysis
 Because we used a regression model we are going to be comparing the r^2 value that we got in our baseline model to the r^2 value that we got in the Final Model.
