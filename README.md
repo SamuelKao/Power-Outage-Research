@@ -86,9 +86,9 @@ Consequently, we reject the null hypothesis, suggesting that the missingness of 
 ## Hypothesis Testing
 ### DEFINING THE HYPOTHESIS
 
-Null Hypothesis: The mean duration of power outages in areas with a RES.PRICE > 11.5 are the same as the mean duration of power outages in areas witha. RES.pRICE <= 11.5. 
+Null Hypothesis: The mean anamoly in areas with a RES.PRICE > 11.5 are the same as the mean anamoly in areas witha. RES.pRICE <= 11.5. 
 
-Alternative Hypothesis: The mean duration of power outages in areas with a RES.PRICE > 11.5 are different than the mean duration of power outages in areas witha. RES.pRICE <= 11.5. 
+Alternative Hypothesis: The mean anamoly in areas with a RES.PRICE > 11.5 are different than the mean anamoly in areas witha. RES.pRICE <= 11.5. 
 
 Let's visualize the distribution of anomaly.levels in places with a res.price <= 11.5 and places with a res.price > 11.5
 
@@ -150,6 +150,8 @@ As stated before, we are going to be running a Multi-Linear Regression model, le
 | 2 | 10.87     | East North Central| 8.19      | 3000.0          | 2.1           | 70000.0             |
 | 3 | 11.79     | East North Central| 9.25      | 2550.0          | 2.2           | 68200.0             |
 | 4 | 13.07     | East North Central| 10.16     | 1740.0          | 2.2           | 250000.0            |
+
+
 
 Make a subset of outages1 with all the relevant features for our linear regression model. This will also help us with the tranformation of necessary columns so that we can run the Multi Linear Regression on it. 
 
