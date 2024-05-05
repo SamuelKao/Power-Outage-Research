@@ -143,13 +143,14 @@ To recap, our response variable is going to be “CUSTOMERS.AFFECTED” and our 
 ## Baseline Model
 As stated before, we are going to be running a Multi-Linear Regression model, lets begin trianing that model.
 
-|   | RES.PRICE | CLIMATE.REGION    | COM.PRICE | OUTAGE_DURATION | PI.UTIL.OFUSA | CUSTOMERS.AFFECTED |
+|   | RES.PRICE | CLIMATE.REGION    | COM.PRICE | OUTAGE_DURATION | PI.UTIL.OFUSA | CUSTOMERS.AFFECTED | CAUSE.CATEGORY|	ANOMALY.LEVEL
 |---|-----------|-------------------|-----------|-----------------|---------------|---------------------|
-| 0 | 11.6      | East North Central| 9.18      | 3060.0          | 2.2           | 70000.0             |
-| 1 | 12.12     | East North Central| 9.71      | 1.0             | 2.2           | 116000.0            |
-| 2 | 10.87     | East North Central| 8.19      | 3000.0          | 2.1           | 70000.0             |
-| 3 | 11.79     | East North Central| 9.25      | 2550.0          | 2.2           | 68200.0             |
-| 4 | 13.07     | East North Central| 10.16     | 1740.0          | 2.2           | 250000.0            |
+| 0 | 11.6      | East North Central| 9.18      | 3060.0          | 2.2           | 70000.0             |severe weather|    -0.3
+| 1 | 12.12     | East North Central| 9.71      | 1.0             | 2.2           | 116000.0            |intentional attack|-0.1
+| 2 | 10.87     | East North Central| 8.19      | 3000.0          | 2.1           | 70000.0             |severe weather	|   -1.5
+| 3 | 11.79     | East North Central| 9.25      | 2550.0          | 2.2           | 68200.0             |severe weather	|   -0.1
+| 4 | 13.07     | East North Central| 10.16     | 1740.0          | 2.2           | 250000.0            |severe weather |   -0.2
+
 
 
 
